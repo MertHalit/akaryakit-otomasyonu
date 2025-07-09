@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Admin Paneli";
+}
+
+<h2>Admin Paneline Hoş Geldiniz!</h2>
+<p>Bu panel sadece <strong>Admin</strong> yetkisine sahip kullanıcılar içindir.</p>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+
+<ul>
+    <li><a asp-controller="AdminPanel" asp-action="CreateUser">➕ Yeni Kullanıcı Oluştur</a></li>
+    <li>
+        <a asp-controller="Fueling" asp-action="Report">📊 Yakıt Dolum Raporu</a>
+    </li>
+
+</ul>

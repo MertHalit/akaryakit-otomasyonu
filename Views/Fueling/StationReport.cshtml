@@ -1,0 +1,45 @@
+﻿@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "İstasyon Bazlı Yakıt Dağılımı";
+    var json = ViewBag.StationFuelData ?? "[]";
+}
+
+<h2 class="mb-4">İstasyon Bazlı Yakıt Dağılımı</h2>
+
+<!-- Debug için -->
+<pre>@Html.Raw(json)</pre>
+
+<canvas id="stationChart" width="400" height="200"></canvas>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const stationData = @Html.Raw(json); // JSON dizesi burada JS nesnesine çevriliyor
+
+        const labels = stationData.map(x => x.StationName);
+        const values = stationData.map(x => x.TotalFuel);
+
+        const ctx = document.getElementById('stationChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Yakıt Dağılımı (Litre)',
+                    data: values,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: {
+                        display: true,
+                        text: 'İstasyona Göre Yakıt Dağılımı (Litre)'
+                    }
+                }
+            }
+        });
+    </script>
+}

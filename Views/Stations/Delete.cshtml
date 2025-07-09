@@ -1,0 +1,17 @@
+﻿@model AkaryakitOtomasyonu.Models.Station
+
+@{
+    ViewData["Title"] = "İstasyon Sil";
+}
+
+<h2>İstasyonu Sil</h2>
+
+<div class="alert alert-warning">
+    <strong>@Model.Name</strong> adlı istasyonu silmek üzeresiniz. Bu işlem geri alınamaz.
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+</form>

@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "AkaryakitOtomasyonu.Server.Controllers.UserController",
+    "Method": "AssignRole",
+    "RelativePath": "api/User/assign-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AkaryakitOtomasyonu.Server.Controllers.RoleAssignmentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AkaryakitOtomasyonu.Server.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/User/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

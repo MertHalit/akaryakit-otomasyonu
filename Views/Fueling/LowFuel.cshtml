@@ -1,0 +1,40 @@
+﻿@model List<AkaryakitOtomasyonu.Models.Tank>
+
+@{
+    ViewData["Title"] = "Düşük Seviye Tanklar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4 text-warning">⚠️ Düşük Seviye Tanklar (%20 Altı)</h2>
+
+@if (Model.Any())
+{
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Tank Adı</th>
+                <th>İstasyon</th>
+                <th>Mevcut Seviye (Litre)</th>
+                <th>Kapasite</th>
+                <th>Doluluk (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tank in Model)
+            {
+                var percentage = (tank.CurrentLevel / tank.Capacity) * 100;
+                <tr class="table-danger">
+                    <td>@tank.Name</td>
+                    <td>@(tank.Station?.Name ?? "-")</td>
+                    <td>@tank.CurrentLevel</td>
+                    <td>@tank.Capacity</td>
+                    <td>@Math.Round(percentage, 2)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-success">Tüm tankların seviyesi yeterlidir. 🚀</div>
+}

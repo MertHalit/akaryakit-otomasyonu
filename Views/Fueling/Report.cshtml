@@ -1,0 +1,56 @@
+﻿@model List<AkaryakitOtomasyonu.Models.Fueling>
+@{
+    ViewData["Title"] = "Yakıt Raporu";
+    var tanks = ViewBag.Tanks as List<AkaryakitOtomasyonu.Models.Tank>;
+    var totalAmount = ViewBag.TotalAmount;
+}
+
+<h2>Yakıt Raporu</h2>
+
+<form method="get" asp-action="Report" class="form-inline mb-3">
+    <div class="form-group me-2">
+        <label for="startDate">Başlangıç Tarihi:</label>
+        <input type="date" name="startDate" class="form-control ms-1" />
+    </div>
+    <div class="form-group me-2">
+        <label for="endDate">Bitiş Tarihi:</label>
+        <input type="date" name="endDate" class="form-control ms-1" />
+    </div>
+    <div class="form-group me-2">
+        <label for="tankId">Tank:</label>
+        <select name="tankId" class="form-control ms-1">
+            <option value="">Tümü</option>
+            @foreach (var tank in tanks)
+            {
+                <option value="@tank.Id">@tank.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Filtrele</button>
+</form>
+
+<p><strong>Toplam Yakıt Miktarı:</strong> @totalAmount</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tarih</th>
+            <th>Tank Adı</th>
+            <th>Miktar</th>
+            <th>İstasyon</th>
+            <th>İşlemi Yapan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fueling in Model)
+        {
+            <tr>
+                <td>@fueling.Timestamp.ToLocalTime().ToString("g")</td>
+                <td>@fueling.Tank?.Name</td>
+                <td>@fueling.Amount</td>
+                <td>@fueling.StationName</td>
+                <td>@fueling.PerformedByUser?.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>

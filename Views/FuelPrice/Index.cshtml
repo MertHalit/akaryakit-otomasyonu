@@ -1,0 +1,31 @@
+﻿@model List<AkaryakitOtomasyonu.Models.FuelPrice>
+
+@{
+    ViewData["Title"] = "Güncel Akaryakıt Fiyatları";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Şehir</th>
+            <th>Benzin (₺)</th>
+            <th>Motorin (₺)</th>
+            <th>LPG (₺)</th>
+            <th>Alınma Zamanı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.City</td>
+                <td>@item.Gasoline</td>
+                <td>@item.Diesel</td>
+                <td>@item.LPG</td>
+                <td>@item.RetrievedAt.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>

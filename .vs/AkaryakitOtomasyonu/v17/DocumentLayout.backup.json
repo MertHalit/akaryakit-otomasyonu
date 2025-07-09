@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|c:\\users\\monster\\onedrive\\masa\u00FCst\u00FC\\akaryakitotomasyonu\\akaryakitotomasyonu\\akaryakitotomasyonu\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E62F2E5-8902-4637-99B7-9778E850CEDB}|AkaryakitOtomasyonu.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T07:32:55.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T07:13:41.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T07:06:45.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T07:06:34.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T21:16:40.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T22:25:25.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\monster\\OneDrive\\Masa\u00FCst\u00FC\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\AkaryakitOtomasyonu\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T10:54:03.957Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

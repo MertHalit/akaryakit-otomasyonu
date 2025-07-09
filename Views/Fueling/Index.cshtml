@@ -1,0 +1,30 @@
+﻿@model List<AkaryakitOtomasyonu.Models.Fueling>
+@{
+    ViewData["Title"] = "Yakıt Kayıtları";
+}
+
+<h2>Yakıt Kayıtları</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tarih</th>
+            <th>Tank Adı</th>
+            <th>Miktar</th>
+            <th>İstasyon</th>
+            <th>İşlemi Yapan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fueling in Model)
+        {
+            <tr>
+                <td>@fueling.Timestamp.ToLocalTime().ToString("g")</td>
+                <td>@fueling.Tank?.Name</td>
+                <td>@fueling.Amount</td>
+                <td>@fueling.StationName</td>
+                <td>@fueling.PerformedByUser?.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>

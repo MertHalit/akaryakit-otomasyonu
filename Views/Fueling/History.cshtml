@@ -1,0 +1,42 @@
+﻿@model List<AkaryakitOtomasyonu.Models.Fueling>
+@{
+    ViewData["Title"] = "Yakıt Geçmişi";
+}
+
+<h2>Yakıt Geçmişi</h2>
+
+<form method="get" asp-action="History" class="form-inline mb-3">
+    <div class="form-group me-2">
+        <label for="startDate">Başlangıç Tarihi:</label>
+        <input type="date" name="startDate" class="form-control ms-1" />
+    </div>
+    <div class="form-group me-2">
+        <label for="endDate">Bitiş Tarihi:</label>
+        <input type="date" name="endDate" class="form-control ms-1" />
+    </div>
+    <button type="submit" class="btn btn-primary">Filtrele</button>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tarih</th>
+            <th>Tank Adı</th>
+            <th>Miktar</th>
+            <th>İstasyon</th>
+            <th>İşlemi Yapan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fueling in Model)
+        {
+            <tr>
+                <td>@fueling.Timestamp.ToLocalTime().ToString("g")</td>
+                <td>@fueling.Tank?.Name</td>
+                <td>@fueling.Amount</td>
+                <td>@fueling.StationName</td>
+                <td>@fueling.PerformedByUser?.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>

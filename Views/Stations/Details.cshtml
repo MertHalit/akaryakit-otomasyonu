@@ -1,0 +1,21 @@
+﻿@model AkaryakitOtomasyonu.Models.Station
+
+@{
+    ViewData["Title"] = "İstasyon Detayı";
+}
+
+<h2>İstasyon Bilgileri</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Ad</th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>Konum</th>
+        <td>@Model.Location</td>
+    </tr>
+</table>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Düzenle</a>
+<a asp-action="Index" class="btn btn-secondary">← Geri Dön</a>

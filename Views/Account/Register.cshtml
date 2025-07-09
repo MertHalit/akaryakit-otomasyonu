@@ -1,0 +1,98 @@
+﻿@model AkaryakitOtomasyonu.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kayıt Ol - Akaryakıt Otomasyonu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://cdn.pixabay.com/photo/2016/11/29/06/15/gas-station-1869824_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .register-card {
+            width: 100%;
+            max-width: 450px;
+            background-color: rgba(255, 255, 255, 0.97);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .register-icon {
+            font-size: 3rem;
+            color: #198754;
+        }
+
+        .register-title {
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+        .subtext {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-card text-center">
+        <div class="mb-4">
+            <i class="bi bi-person-plus-fill register-icon"></i>
+            <h2 class="register-title">Yeni Kullanıcı Kaydı</h2>
+            <p class="subtext">Sisteme erişim için kayıt olun</p>
+        </div>
+
+        <form asp-action="Register" method="post" class="text-start">
+            <div class="mb-3">
+                <label asp-for="Username" class="form-label">Kullanıcı Adı</label>
+                <input asp-for="Username" class="form-control" placeholder="Bir kullanıcı adı girin" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">E-posta</label>
+                <input asp-for="Email" class="form-control" placeholder="E-posta adresi girin" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Şifre</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Şifre belirleyin" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ConfirmPassword" class="form-label">Şifre (Tekrar)</label>
+                <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Şifreyi tekrar girin" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">✅ Kayıt Ol</button>
+        </form>
+
+        <div class="mt-3 text-center">
+            <a asp-controller="Account" asp-action="Login" class="btn btn-link text-success fw-semibold">
+                🔑 Zaten hesabınız var mı? Giriş Yap
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

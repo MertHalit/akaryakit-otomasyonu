@@ -1,0 +1,48 @@
+﻿@model AkaryakitOtomasyonu.Models.Tank
+
+@{
+    ViewData["Title"] = "Tank Düzenle";
+    var stations = ViewBag.Stations as SelectList;
+}
+
+<h2>Tank Düzenle</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Tank Adı</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="Capacity" class="control-label">Kapasite (L)</label>
+        <input asp-for="Capacity" class="form-control" />
+        <span asp-validation-for="Capacity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="CurrentLevel" class="control-label">Mevcut Seviye (L)</label>
+        <input asp-for="CurrentLevel" class="form-control" />
+        <span asp-validation-for="CurrentLevel" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="StationId" class="control-label">İstasyon</label>
+        <select asp-for="StationId" class="form-control" asp-items="stations">
+            <option value="">--- İstasyon Seçin ---</option>
+        </select>
+        <span asp-validation-for="StationId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-4">
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+        <a asp-action="Index" class="btn btn-secondary">İptal</a>
+    </div>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

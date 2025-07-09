@@ -1,0 +1,31 @@
+﻿@model AkaryakitOtomasyonu.Models.Tank
+
+@{
+    ViewData["Title"] = "Tank Ekle";
+}
+
+<h2>Yeni Tank Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group mb-2">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Capacity"></label>
+        <input asp-for="Capacity" class="form-control" />
+        <span asp-validation-for="Capacity" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="CurrentLevel"></label>
+        <input asp-for="CurrentLevel" class="form-control" />
+        <span asp-validation-for="CurrentLevel" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label>İstasyon</label>
+        <select asp-for="StationId" class="form-control" asp-items="ViewBag.Stations"></select>
+    </div>
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+</form>
